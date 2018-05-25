@@ -1,5 +1,12 @@
 # fastify-xss-filter
 
+[![Code style][lint-img]][lint-url]
+[![Dependency Status][dep-img]][dep-url]
+[![Dev Dependency Status][dev-dep-img]][dev-dep-url]
+[![NPM version][npm-ver-img]][npm-url]
+[![NPM downloads][npm-dl-img]][npm-url]
+[![NPM license][npm-lc-img]][npm-url]
+
 Fastify plugin to set the X-XSS-Protection header.
 
 ## Why?
@@ -102,3 +109,14 @@ Force to set header for IE whos version under 9.
 - Add test case
 - Add ci
 - Add benchmark scripts
+
+[lint-img]: https://img.shields.io/badge/code%20style-handsome-brightgreen.svg?style=flat-square
+[lint-url]: https://github.com/poppinlp/eslint-config-handsome
+[dep-img]: https://img.shields.io/david/poppinlp/fastify-xss-filter.svg?style=flat-square
+[dep-url]: https://david-dm.org/poppinlp/fastify-xss-filter
+[dev-dep-img]: https://img.shields.io/david/dev/poppinlp/fastify-xss-filter.svg?style=flat-square
+[dev-dep-url]: https://david-dm.org/poppinlp/fastify-xss-filter#info=devDependencies
+[npm-ver-img]: https://img.shields.io/npm/v/fastify-xss-filter.svg?style=flat-square
+[npm-dl-img]: https://img.shields.io/npm/dm/fastify-xss-filter.svg?style=flat-square
+[npm-lc-img]: https://img.shields.io/npm/l/fastify-xss-filter.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/fastify-xss-filter
