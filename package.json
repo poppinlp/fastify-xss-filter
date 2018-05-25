@@ -1,0 +1,40 @@
+{
+  "name": "fastify-xss-filter",
+  "version": "0.1.0",
+  "description": "Fastify plugin to set the X-XSS-Protection header",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poppinlp/fastify-xss-filter.git"
+  },
+  "keywords": [
+    "fastify",
+    "fastify-plugin",
+    "helmet",
+    "xss-filter"
+  ],
+  "author": "PoppinL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poppinlp/fastify-xss-filter/issues"
+  },
+  "homepage": "https://github.com/poppinlp/fastify-xss-filter#readme",
+  "engines": {
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "fastify-plugin": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-handsome": "^0.5.0",
+    "eslint-config-prettier": "^2.9.0",
+    "prettier": "^1.12.1"
+  },
+  "peerDependencies": {
+    "fastify": "^1.0.0"
+  }
+}
