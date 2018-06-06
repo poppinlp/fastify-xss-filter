@@ -1,6 +1,6 @@
 const fp = require('fastify-plugin');
 
-const xssFilter = (app, opts = {}, next) => {
+const xssFilter = (app, opts, next) => {
 	const defaultHeader = '1; mode=block';
 	const header = opts.reportUri ? `${defaultHeader}; report=${opts.reportUri}` : defaultHeader;
 
