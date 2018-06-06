@@ -1,0 +1,4 @@
+Average req/sec in 5 times 10s test
+with no plugin: 30627.42
+with x-xss-protection middleware: 28863.83
+with fastify-xss-filter plugin: 30120.29

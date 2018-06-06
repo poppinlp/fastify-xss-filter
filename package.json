@@ -1,15 +1,24 @@
 {
   "name": "fastify-xss-filter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fastify plugin to set the X-XSS-Protection header",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint src"
+    "benchmark": "node benchmarks/benchmark.js",
+    "fmt": "prettier src/**.js test/**.js --write",
+    "lint": "eslint src test",
+    "ut": "ava --verbose --color | tap-diff",
+    "cov": "nyc npm run ut",
+    "report": "nyc report --reporter=text-lcov | coveralls",
+    "test": "npm run lint && npm run cov"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poppinlp/fastify-xss-filter.git"
   },
+  "files": [
+    "src"
+  ],
   "keywords": [
     "fastify",
     "fastify-plugin",
@@ -29,10 +38,16 @@
     "fastify-plugin": "^1.0.1"
   },
   "devDependencies": {
+    "autocannon": "^2.4.1",
+    "ava": "^0.25.0",
     "eslint": "^4.19.1",
     "eslint-config-handsome": "^0.5.0",
     "eslint-config-prettier": "^2.9.0",
-    "prettier": "^1.12.1"
+    "fastify": "^1.5.0",
+    "nyc": "^12.0.2",
+    "prettier": "^1.13.4",
+    "tap-diff": "^0.1.1",
+    "x-xss-protection": "^1.1.0"
   },
   "peerDependencies": {
     "fastify": "^1.0.0"
