@@ -1,6 +1,6 @@
 {
   "name": "fastify-xss-filter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Fastify plugin to set the X-XSS-Protection header",
   "main": "src/index.js",
   "scripts": {
