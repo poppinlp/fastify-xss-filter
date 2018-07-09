@@ -17,6 +17,11 @@ You may know [x-xss-protection](https://github.com/helmetjs/x-xss-protection) as
 
 You may find the reason in [benchmark result](./benchmarks/benchmark.txt) and wish you like it. :)
 
+## Difference
+
+This plugin has passed all [x-xss-protection](https://github.com/helmetjs/x-xss-protection) test cases.
+And no difference in options.
+
 ## Install
 
 Via npm:
@@ -57,7 +62,7 @@ Set report URI in header, you may find more detail [here](https://developer.mozi
 
 ### setOnOldIE {boolean}
 
-Force to set header for IE whos version under 9.
+Force to set header for IE whos version under 9. Default is `false`.
 
 ## Changelog
 

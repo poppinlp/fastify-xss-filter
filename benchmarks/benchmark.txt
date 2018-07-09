@@ -1,4 +1,8 @@
-Average req/sec in 5 times 10s test
-with no plugin: 30627.42
-with x-xss-protection middleware: 28863.83
-with fastify-xss-filter plugin: 30120.29
+node version: v10.6.0
+platform: darwin
+cpus: [{"model":"Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz","speed":3100,"times":{"user":77826120,"nice":0,"sys":42455180,"idle":305332260,"irq":0}},{"model":"Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz","speed":3100,"times":{"user":43241100,"nice":0,"sys":18260510,"idle":364090000,"irq":0}},{"model":"Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz","speed":3100,"times":{"user":75118120,"nice":0,"sys":35920900,"idle":314552640,"irq":0}},{"model":"Intel(R) Core(TM) i7-5557U CPU @ 3.10GHz","speed":3100,"times":{"user":44087560,"nice":0,"sys":17752480,"idle":363751540,"irq":0}}]
+
+Average req/sec in 3 times 10s test
+with no plugin: 22317.87
+with x-xss-protection middleware: 18532.47
+with fastify-xss-filter plugin: 22390.20

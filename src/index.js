@@ -1,8 +1,8 @@
 const fp = require('fastify-plugin');
 
 const xssFilter = (app, opts, next) => {
-	const defaultHeader = '1; mode=block';
-	const header = opts.reportUri ? `${defaultHeader}; report=${opts.reportUri}` : defaultHeader;
+	const DEFAULT_HEADER = '1; mode=block';
+	const header = opts.reportUri ? `${DEFAULT_HEADER}; report=${opts.reportUri}` : DEFAULT_HEADER;
 
 	app.addHook('onSend', (request, reply, payload, next) => {
 		if (opts.setOnOldIE) {
